@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: service-pod
+  labels:
+    podname: my-pod
+spec:
+  containers:
+    - name: my-pod
+      image: kareemyasser/kubernetes-test
+      ports:
+        - containerPort: 8080
